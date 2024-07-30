@@ -47,8 +47,9 @@ const TopProducts = ({ handleOrderPopup }) => {
         </div>
         {/* Body section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
-          {ProductsData.map((data) => (
+          {ProductsData.map((data, index) => ( // Add index as the key
             <div
+              key={index} // Add key here
               data-aos="zoom-in"
               className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
             >
