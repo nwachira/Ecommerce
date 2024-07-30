@@ -28,7 +28,7 @@ interface ProductCardProps {
   product: Product;
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product }: any) {
   // Check for context value
   const context = useContext(Store);
 
